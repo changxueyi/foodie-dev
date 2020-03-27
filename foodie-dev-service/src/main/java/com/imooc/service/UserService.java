@@ -9,4 +9,9 @@ public interface UserService {
 
     //Bo是用来接收前端数据封装起来的，创建用户
     public Users createUser(UserBo userBo);
+
+    //检索用户名和密码是否匹配 ，用于登录
+    public Users queryUserForLogin(String username,String password);
+
+
 }

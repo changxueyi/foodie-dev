@@ -42,6 +42,7 @@ public class UserServiceImpl implements UserService {
         return result==null ? false : true;
     }
 
+    //注册用户
     @Transactional(propagation = Propagation.REQUIRED)
     @Override
     public Users createUser(UserBo userBo) {
@@ -51,7 +52,7 @@ public class UserServiceImpl implements UserService {
         user.setId(userId);
         user.setUsername(userBo.getUsername());
         try {
-            user.setPassword(MD5Utils.getMD5Str(userBo.getUsername()));
+            user.setPassword(MD5Utils.getMD5Str(userBo.getPassword()));
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -68,5 +69,19 @@ public class UserServiceImpl implements UserService {
 
         usersMapper.insert(user);
         return user;
+    }
+
+    //用户登录
+    @Override
+    public Users queryUserForLogin(String username, String password) {
+        Example userExample = new Example(Users.class);
+        Example.Criteria userCriteria = userExample.createCriteria();
+
+        //criteria.andXxxEqualTo(value)    添加xxx字段等于value条件
+        userCriteria.andEqualTo("username", username);
+        userCriteria.andEqualTo("password", password);
+
+        Users result = usersMapper.selectOneByExample(userExample);
+        return result;
     }
 }

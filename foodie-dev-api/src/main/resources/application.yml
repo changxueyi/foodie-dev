@@ -23,6 +23,9 @@ spring:
 mybatis:
   type-aliases-package: com.imooc.pojo          # 所有POJO类所在包路径
   mapper-locations: classpath:mapper/*.xml      # mapper映射文件
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#上面这句话，特别的有用，可以开启 SQL 语句查询
 # 通用 Mapper 配置
 mapper:
   mappers: com.imooc.my.mapper.MyMapper

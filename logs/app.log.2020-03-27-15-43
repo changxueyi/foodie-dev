@@ -1,0 +1,3 @@
+2020-03-27 15:43:36 INFO  ServiceLogAspect:40 - ==========开始执行====class com.imooc.service.impl.UserServiceImpl.queryUserForLogin==========
+2020-03-27 15:43:36 INFO  ServiceLogAspect:58 - =====执行结束，耗时：5毫秒==========
+2020-03-27 15:43:36 INFO  CookieUtils:210 - ========== domainName: localhost ==========
