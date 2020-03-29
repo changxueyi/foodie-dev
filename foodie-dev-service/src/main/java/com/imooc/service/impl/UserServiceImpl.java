@@ -2,7 +2,7 @@ package com.imooc.service.impl;
 
 import com.imooc.enums.Sex;
 import com.imooc.mapper.UsersMapper;
-import com.imooc.pojo.UserBo;
+import com.imooc.pojo.Bo.UserBo;
 import com.imooc.pojo.Users;
 import com.imooc.service.UserService;
 import com.imooc.utils.DateUtil;
