@@ -1,0 +1,6 @@
+2020-03-31 15:01:05 INFO  ServiceLogAspect:40 - ==========开始执行====class com.imooc.service.impl.CategoryServiceImpl.getSubCarList==========
+2020-03-31 15:01:05 INFO  ServiceLogAspect:40 - ==========开始执行====class com.imooc.service.impl.CategoryServiceImpl.getSubCarList==========
+2020-03-31 15:01:05 INFO  ServiceLogAspect:58 - =====执行结束，耗时：40毫秒==========
+2020-03-31 15:01:05 INFO  ServiceLogAspect:58 - =====执行结束，耗时：27毫秒==========
+2020-03-31 15:01:07 INFO  ServiceLogAspect:40 - ==========开始执行====class com.imooc.service.impl.CategoryServiceImpl.getSubCarList==========
+2020-03-31 15:01:07 INFO  ServiceLogAspect:58 - =====执行结束，耗时：16毫秒==========

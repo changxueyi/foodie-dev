@@ -50,11 +50,12 @@ public class IndexController {
         return IMOOCJSONResult.ok(list);
     }
 
-    //获取二级目录
+    //@ApiParam(required = “是否必须参数”, name = “参数名称”, value = “参数具体描述”）
+    //获取二级目录，采用懒加载的方式，鼠标放上去，就直接去加载
     @ApiOperation(value = "获取商品子分类，二级分类", notes = "获取商品子分类，二级分类", httpMethod = "GET")
     @GetMapping("/subCat/{rootCatId}")
     public IMOOCJSONResult subCat(
-            @ApiParam(name = "rootCatId", value = "一级分类id", required = true)
+            @ApiParam(name = "rootCatId", value = "二级分类id", required = true)
             @PathVariable Integer rootCatId) {
         //提前判断，返回空字符串,防止一些爬虫等
         if (rootCatId == null) {
@@ -76,7 +77,7 @@ public class IndexController {
         }
         List<NewItemsVO> list = categoryService.getSixNewItemsLazy(rootCatId);
         return IMOOCJSONResult.ok(list);
+    }
 
-}
 
 }

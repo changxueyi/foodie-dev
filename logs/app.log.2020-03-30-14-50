@@ -1,0 +1,2 @@
+2020-03-30 14:50:04 INFO  ServiceLogAspect:40 - ==========开始执行====class com.imooc.service.impl.CategoryServiceImpl.getSixNewItemsLazy==========
+2020-03-30 14:50:04 INFO  ServiceLogAspect:58 - =====执行结束，耗时：4毫秒==========

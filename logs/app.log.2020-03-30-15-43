@@ -1,0 +1,18 @@
+2020-03-30 15:43:44 INFO  ServiceLogAspect:40 - ==========开始执行====class com.imooc.service.impl.ItemServiceImpl.queryItemById==========
+2020-03-30 15:43:44 INFO  HikariDataSource:110 - DateSourceHikariCP - Starting...
+2020-03-30 15:43:44 INFO  HikariDataSource:123 - DateSourceHikariCP - Start completed.
+2020-03-30 15:43:44 INFO  ServiceLogAspect:58 - =====执行结束，耗时：185毫秒==========
+2020-03-30 15:43:44 INFO  ServiceLogAspect:40 - ==========开始执行====class com.imooc.service.impl.ItemServiceImpl.queryItemImgList==========
+2020-03-30 15:43:44 INFO  ServiceLogAspect:58 - =====执行结束，耗时：22毫秒==========
+2020-03-30 15:43:44 INFO  ServiceLogAspect:40 - ==========开始执行====class com.imooc.service.impl.ItemServiceImpl.queryItemParam==========
+2020-03-30 15:43:44 INFO  ServiceLogAspect:58 - =====执行结束，耗时：1毫秒==========
+2020-03-30 15:43:44 INFO  ServiceLogAspect:40 - ==========开始执行====class com.imooc.service.impl.ItemServiceImpl.queryItemSpecList==========
+2020-03-30 15:43:44 INFO  ServiceLogAspect:58 - =====执行结束，耗时：2毫秒==========
+2020-03-30 15:43:55 INFO  ServiceLogAspect:40 - ==========开始执行====class com.imooc.service.impl.ItemServiceImpl.queryItemById==========
+2020-03-30 15:43:55 INFO  ServiceLogAspect:58 - =====执行结束，耗时：7毫秒==========
+2020-03-30 15:43:55 INFO  ServiceLogAspect:40 - ==========开始执行====class com.imooc.service.impl.ItemServiceImpl.queryItemImgList==========
+2020-03-30 15:43:55 INFO  ServiceLogAspect:58 - =====执行结束，耗时：4毫秒==========
+2020-03-30 15:43:55 INFO  ServiceLogAspect:40 - ==========开始执行====class com.imooc.service.impl.ItemServiceImpl.queryItemParam==========
+2020-03-30 15:43:55 INFO  ServiceLogAspect:58 - =====执行结束，耗时：4毫秒==========
+2020-03-30 15:43:55 INFO  ServiceLogAspect:40 - ==========开始执行====class com.imooc.service.impl.ItemServiceImpl.queryItemSpecList==========
+2020-03-30 15:43:55 INFO  ServiceLogAspect:58 - =====执行结束，耗时：4毫秒==========

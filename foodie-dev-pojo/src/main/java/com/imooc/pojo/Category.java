@@ -190,4 +190,18 @@ public class Category {
     public void setBgColor(String bgColor) {
         this.bgColor = bgColor;
     }
+
+    @Override
+    public String toString() {
+        return "Category{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", type=" + type +
+                ", fatherId=" + fatherId +
+                ", logo='" + logo + '\'' +
+                ", slogan='" + slogan + '\'' +
+                ", catImage='" + catImage + '\'' +
+                ", bgColor='" + bgColor + '\'' +
+                '}';
+    }
 }

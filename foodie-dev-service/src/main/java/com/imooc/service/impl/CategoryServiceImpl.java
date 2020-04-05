@@ -30,7 +30,6 @@ public class CategoryServiceImpl implements CategoryService {
 
     /**
      * 查询所有的一级分类
-     *
      * @return
      */
     @Transactional(propagation = Propagation.SUPPORTS)

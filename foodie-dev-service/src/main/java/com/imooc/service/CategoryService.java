@@ -16,7 +16,7 @@ public interface CategoryService {
     public List<CategoryVO> getSubCarList(Integer rootCatId);
 
     /**
-     * 查询首页每个一级目录下的6个最新商品数据
+     * 查询首页每个一级目录下的6个最新商品数据       **商品推荐**
      * @param rootCatId
      * @return
      */

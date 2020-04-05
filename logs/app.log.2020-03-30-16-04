@@ -1,0 +1,46 @@
+2020-03-30 16:04:39 INFO  SpringBootTestContextBootstrapper:308 - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.imooc.ControllerTest], using SpringBootContextLoader
+2020-03-30 16:04:39 INFO  AbstractContextLoader:264 - Could not detect default resource locations for test class [com.imooc.ControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-03-30 16:04:39 INFO  AnnotationConfigContextLoaderUtils:83 - Could not detect default configuration classes for test class [com.imooc.ControllerTest]: ControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-03-30 16:04:39 INFO  SpringBootTestContextBootstrapper:247 - Found @SpringBootConfiguration com.imooc.Application for test class com.imooc.ControllerTest
+2020-03-30 16:04:39 INFO  SpringBootTestContextBootstrapper:248 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2020-03-30 16:04:39 INFO  SpringBootTestContextBootstrapper:177 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@62379589, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4afcd809, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@175c2241, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5bf0d49, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5b7a5baa, org.springframework.test.context.transaction.TransactionalTestExecutionListener@776aec5c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1d296da, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7c7a06ec, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@75d4a5c2, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@557caf28, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@408d971b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6c6cb480]
+2020-03-30 16:04:39 INFO  Version:21 - HV000001: Hibernate Validator 6.0.16.Final
+2020-03-30 16:04:39 INFO  ControllerTest:50 - Starting ControllerTest on LAPTOP-OD3L0H6N with PID 2536 (started by changxueyi in D:\idea\project\ttch\foodie-dev\foodie-dev-api)
+2020-03-30 16:04:39 INFO  ControllerTest:675 - No active profile set, falling back to default profiles: default
+2020-03-30 16:04:40 WARN  ClassPathMapperScanner:44 - No MyBatis mapper was found in '[com.imooc]' package. Please check your configuration.
+2020-03-30 16:04:41 INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b38a2296] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-30 16:04:43 INFO  ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-30 16:04:43 INFO  MapperCacheDisabler:60 - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-03-30 16:04:43 INFO  MapperCacheDisabler:60 - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-03-30 16:04:43 INFO  MapperCacheDisabler:60 - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-03-30 16:04:43 INFO  MapperCacheDisabler:83 - Clear EntityHelper entityTableMap cache.
+2020-03-30 16:04:43 INFO  DocumentationPluginsBootstrapper:84 - Context refreshed
+2020-03-30 16:04:43 INFO  DocumentationPluginsBootstrapper:87 - Found 1 custom documentation plugin(s)
+2020-03-30 16:04:43 INFO  ApiListingReferenceScanner:44 - Scanning for api listing references
+2020-03-30 16:04:43 INFO  ControllerTest:59 - Started ControllerTest in 4.22 seconds (JVM running for 4.819)
+2020-03-30 16:04:43 INFO  ServiceLogAspect:40 - ==========开始执行====class com.imooc.service.impl.StuServiceImpl.getStuInfo==========
+2020-03-30 16:04:43 INFO  HikariDataSource:110 - DateSourceHikariCP - Starting...
+2020-03-30 16:04:44 INFO  HikariDataSource:123 - DateSourceHikariCP - Start completed.
+2020-03-30 16:04:44 INFO  ServiceLogAspect:58 - =====执行结束，耗时：264毫秒==========
+2020-03-30 16:04:44 INFO  ServiceLogAspect:40 - ==========开始执行====class com.imooc.service.impl.CategoryServiceImpl.getSixNewItemsLazy==========
+2020-03-30 16:04:44 INFO  ServiceLogAspect:58 - =====执行结束，耗时：14毫秒==========
+2020-03-30 16:04:44 INFO  ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-30 16:04:44 INFO  HikariDataSource:350 - DateSourceHikariCP - Shutdown initiated...
+2020-03-30 16:04:44 INFO  HikariDataSource:352 - DateSourceHikariCP - Shutdown completed.
+2020-03-30 16:04:54 INFO  Version:21 - HV000001: Hibernate Validator 6.0.16.Final
+2020-03-30 16:04:54 INFO  Application:50 - Starting Application on LAPTOP-OD3L0H6N with PID 12688 (D:\idea\project\ttch\foodie-dev\foodie-dev-api\target\classes started by changxueyi in D:\idea\project\ttch\foodie-dev)
+2020-03-30 16:04:54 INFO  Application:675 - No active profile set, falling back to default profiles: default
+2020-03-30 16:04:55 WARN  ClassPathMapperScanner:44 - No MyBatis mapper was found in '[com.imooc]' package. Please check your configuration.
+2020-03-30 16:04:55 INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$94667be7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-30 16:04:55 INFO  TomcatWebServer:90 - Tomcat initialized with port(s): 8088 (http)
+2020-03-30 16:04:55 INFO  ContextLoader:296 - Root WebApplicationContext: initialization completed in 1337 ms
+2020-03-30 16:04:56 INFO  ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-30 16:04:56 INFO  MapperCacheDisabler:60 - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-03-30 16:04:56 INFO  MapperCacheDisabler:60 - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-03-30 16:04:56 INFO  MapperCacheDisabler:60 - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-03-30 16:04:56 INFO  MapperCacheDisabler:83 - Clear EntityHelper entityTableMap cache.
+2020-03-30 16:04:57 INFO  DocumentationPluginsBootstrapper:84 - Context refreshed
+2020-03-30 16:04:57 INFO  DocumentationPluginsBootstrapper:87 - Found 1 custom documentation plugin(s)
+2020-03-30 16:04:57 INFO  ApiListingReferenceScanner:44 - Scanning for api listing references
+2020-03-30 16:04:57 INFO  TomcatWebServer:204 - Tomcat started on port(s): 8088 (http) with context path ''
+2020-03-30 16:04:57 INFO  Application:59 - Started Application in 3.199 seconds (JVM running for 3.697)
