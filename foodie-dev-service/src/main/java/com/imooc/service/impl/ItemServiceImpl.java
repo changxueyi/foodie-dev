@@ -3,12 +3,10 @@ package com.imooc.service.impl;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.imooc.enums.CommentLevel;
+import com.imooc.enums.YesOrNo;
 import com.imooc.mapper.*;
 import com.imooc.pojo.*;
-import com.imooc.pojo.Vo.CommentLevelCountsVO;
-import com.imooc.pojo.Vo.ItemCommentVO;
-import com.imooc.pojo.Vo.ItemInfoVO;
-import com.imooc.pojo.Vo.SearchItemsVO;
+import com.imooc.pojo.Vo.*;
 import com.imooc.service.ItemService;
 import com.imooc.utils.DesensitizationUtil;
 import com.imooc.utils.PagedGridResult;
@@ -19,9 +17,7 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 import tk.mybatis.mapper.entity.Example;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * @ClassName ItemServiceImpl
@@ -169,6 +165,7 @@ public class ItemServiceImpl implements ItemService {
 
         return setterPagedGrid(list, page);
     }
+
     private PagedGridResult setterPagedGrid(List<?> list, Integer page) {
         PageInfo<?> pageList = new PageInfo<>(list);
         PagedGridResult grid = new PagedGridResult();
@@ -178,17 +175,60 @@ public class ItemServiceImpl implements ItemService {
         grid.setRecords(pageList.getTotal());
         return grid;
     }
+
     @Transactional(propagation = Propagation.SUPPORTS)
     @Override
     public PagedGridResult searchItems(String keywords, String sort, Integer page, Integer pageSize) {
 
-        Map<String,Object> map = new HashMap<>();
-        map.put("keywords",keywords);
-        map.put("sort",sort);
+        Map<String, Object> map = new HashMap<>();
+        map.put("keywords", keywords);
+        map.put("sort", sort);
 
-        PageHelper.startPage(page,pageSize);
+        PageHelper.startPage(page, pageSize);
         List<SearchItemsVO> list = itemsMapperCustom.searchItems(map);
 
         return setterPagedGrid(list, page);
     }
-}
+
+    @Transactional(propagation = Propagation.SUPPORTS)
+    @Override
+    public List<ShopcartVO> queryItemsBySpecIds(String specIds) {
+        String ids[] = specIds.split(",");
+        List<String> specIdsList = new ArrayList<>();
+        Collections.addAll(specIdsList, ids);
+        return itemsMapperCustom.queryItemsBySpecIds(specIdsList);
+    }
+
+    @Transactional(propagation = Propagation.SUPPORTS)
+    @Override
+    public ItemsSpec queryItemSpecById(String specIds) {
+        return itemsSpecMapper.selectByPrimaryKey(specIds);
+    }
+
+    //给定一个商品的id ，返回主图
+    @Transactional(propagation = Propagation.SUPPORTS)
+    @Override
+    public String queryItemMainImgById(String itemId) {
+        ItemsImg itemsImg = new ItemsImg();
+        itemsImg.setItemId(itemId);
+        itemsImg.setIsMain(YesOrNo.YES.type);
+        ItemsImg result = itemsImgMapper.selectOne(itemsImg);
+        return result != null ? result.getUrl() : "";
+    }
+
+    //扣除库存
+    @Transactional(propagation = Propagation.REQUIRED)
+    @Override
+    public void decreaseItemSpecStock(String specId, int buyCounts) {
+        //1.查询库存
+     //   int stock = 2;
+        //2.判断库存是否可以减少到 0 以下
+      //  if (stock-buyCounts<0){
+            //提示用户,库存不够 ，库存是公共资源，高并发情况下，可能会引起超卖
+            //specId 商品id buyCounts 商品数量
+            int result = itemsMapperCustom.decreaseItemSpecStock(specId,buyCounts);
+            if (result!=1){
+                throw new RuntimeException("订单创建失败，库存不足");
+            }
+        }
+    }

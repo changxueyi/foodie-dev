@@ -1,4 +1,0 @@
-2020-03-29 09:56:33 INFO  ServiceLogAspect:40 - ==========开始执行====class com.imooc.service.impl.CategoryServiceImpl.queryAllRootLevelCat==========
-2020-03-29 09:56:33 INFO  ServiceLogAspect:40 - ==========开始执行====class com.imooc.service.impl.CarouselServiceImpl.queryAll==========
-2020-03-29 09:56:34 INFO  ServiceLogAspect:58 - =====执行结束，耗时：176毫秒==========
-2020-03-29 09:56:34 INFO  ServiceLogAspect:58 - =====执行结束，耗时：179毫秒==========

@@ -1,6 +1,0 @@
-2020-03-30 15:04:01 INFO  ServiceLogAspect:40 - ==========开始执行====class com.imooc.service.impl.CategoryServiceImpl.getSubCarList==========
-2020-03-30 15:04:01 INFO  HikariDataSource:110 - DateSourceHikariCP - Starting...
-2020-03-30 15:04:01 INFO  ServiceLogAspect:40 - ==========开始执行====class com.imooc.service.impl.CategoryServiceImpl.getSubCarList==========
-2020-03-30 15:04:01 INFO  HikariDataSource:123 - DateSourceHikariCP - Start completed.
-2020-03-30 15:04:01 INFO  ServiceLogAspect:58 - =====执行结束，耗时：201毫秒==========
-2020-03-30 15:04:01 INFO  ServiceLogAspect:58 - =====执行结束，耗时：78毫秒==========

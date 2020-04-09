@@ -81,7 +81,8 @@ public class PassportController {
         userResult = setNullProperty(userResult);
         CookieUtils.setCookie(request, response, "user",
                 JsonUtils.objectToJson(userResult), true);//true 设置为true 开启cookie加密
-
+        // TODO 生成 用户token，存入redis会话
+        // TODO 同步购物车数据
         return IMOOCJSONResult.ok();
     }
 

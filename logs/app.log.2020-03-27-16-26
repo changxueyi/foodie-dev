@@ -1,3 +1,0 @@
-2020-03-27 16:26:28 INFO  DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
-2020-03-27 16:26:28 INFO  DispatcherServlet:546 - Completed initialization in 43 ms
-2020-03-27 16:26:34 INFO  ServiceLogAspect:40 - ==========开始执行====class com.imooc.service.impl.UserServiceImpl.queryUserForLogin==========

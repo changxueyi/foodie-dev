@@ -1,3 +1,4 @@
+/*
 package com.imooc.aspect;
 
 import org.aspectj.lang.ProceedingJoinPoint;
@@ -7,25 +8,30 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
+*/
 /**
  * @ClassName ServiceLogAspect
  * @Description TODO
  * @Author changxueyi
  * @Date 2020/3/27 14:25
- */
+ *//*
+
 @Aspect
 @Component
 public class ServiceLogAspect {
     public static final Logger log = LoggerFactory.getLogger(ServiceLogAspect.class);
-    /**+
+    */
+/**+
      * AOP 通知
      *  1. 前置通知 ： 在方法前执行
      *  2. 后置通知 ： 在方法正常调用之后通知
      *  3. 环绕通知 :  在方法调用的前后，都可以执行通知
      *  4. 异常通知 ： 如果在方法调用过程中发生异常，则通知
      *  5. 最终通知 ： 在方法调用之后执行 相当于try cache 中的finally
-     */
-    /**
+     *//*
+
+    */
+/**
      * execution 代表执行的表达式主体
      * 第一处 * 代表方法返回类型 ， * 代表所有的类型
      * 第二处 包名代表aop 监控的类所在的包
@@ -34,7 +40,8 @@ public class ServiceLogAspect {
      * 第五处 *（..）* 代表类中的方法名，（..）表示方法中的任何参数
      * @param joinPoint
      * @return java.lang.Object
-    */
+    *//*
+
     @Around("execution(* com.imooc.service.impl..*.*(..))")
     public Object recordTimeLog(ProceedingJoinPoint joinPoint) throws Throwable {
         log.info("==========开始执行===={}.{}==========",
@@ -61,4 +68,4 @@ public class ServiceLogAspect {
 
 
     }
-}
+}*/

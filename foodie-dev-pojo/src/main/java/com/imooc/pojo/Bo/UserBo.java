@@ -42,4 +42,5 @@ public class UserBo {
     public void setConfirmPassword(String confirmPassword) {
         this.confirmPassword = confirmPassword;
     }
+
 }

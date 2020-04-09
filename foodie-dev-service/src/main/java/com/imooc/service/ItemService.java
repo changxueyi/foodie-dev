@@ -5,6 +5,7 @@ import com.imooc.pojo.ItemsImg;
 import com.imooc.pojo.ItemsParam;
 import com.imooc.pojo.ItemsSpec;
 import com.imooc.pojo.Vo.CommentLevelCountsVO;
+import com.imooc.pojo.Vo.ShopcartVO;
 import com.imooc.utils.PagedGridResult;
 
 import java.util.List;
@@ -63,5 +64,14 @@ public interface ItemService {
     public PagedGridResult queryPagedComments(String itemId, Integer level,
                                               Integer page, Integer pageSize);
     public PagedGridResult searchItems(String keywords,String sort,Integer page,Integer pageSize);
+
+    public List<ShopcartVO> queryItemsBySpecIds(String specIds);
+    //根据商品规格id，获取具体信息
+    public ItemsSpec queryItemSpecById(String specIds);
+    //根据商品id 获取商品图片主图
+    public String queryItemMainImgById(String itemId);
+
+    //减少库存
+    public void decreaseItemSpecStock(String specId,int buyCounts);
 
 }
